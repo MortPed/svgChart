@@ -6,38 +6,19 @@
   <script src="script.js"></script>
 </head>
 <body>
-  <header>
-    <h1>Headline</h1>
-    <nav>
-      <li>
-        <a href="#">No Where</a>
-      </li>
-      <li>
-        <a href="#">No Where</a>
-      </li>
-      <li>
-        <a href="http://www.google.dk">Google</a>
-      </li>
-      <li>
-        <a href="#">No Where</a>
-      </li>
-      <li>
-        <a href="#">No Where</a>
-      </li>
-    </nav>
-  </header>
-  <div class="content">
-    <h2>Page Title</h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eros erat, fermentum ac tincidunt sit amet, luctus nec risus. Praesent nec ex neque. Phasellus auctor ornare eros, ut laoreet odio finibus eget. Suspendisse in est eu massa laoreet pretium sit amet vel ex. Ut nec orci vel ante dapibus fringilla non a ante. Nulla eget eros in metus mollis auctor. Mauris a fermentum elit.
-
-Vestibulum non augue hendrerit, ultrices lorem non, viverra elit. Duis porttitor congue dui, vitae consequat turpis rhoncus eu. Nam efficitur luctus nisi, sed hendrerit neque dapibus eu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis magna non ipsum aliquam ultricies sit amet non elit. Vestibulum non purus mauris. Aenean eu sapien neque. Nam hendrerit dui vitae pellentesque sagittis. Sed vestibulum sapien ut mi posuere lacinia. Cras nec sodales metus, eget egestas eros. Nunc aliquam laoreet justo ac laoreet.
-    </p>
+  <div class="wrapper">
+    <svg class="background" viewBox="0 0 32 32">
+      <circle r="16" cx="16" cy="16" />
+    </svg>
+    <svg class="filler" viewBox="0 0 32 32">
+      <circle id="animate" r="16" cx="16" cy="16" />
+    </svg>
+    <div class="output-container">
+      <div id="output" class="output">
+        N/A
+      </div>
+    </div>
   </div>
-  <footer>
-    <p>
-      This is the footer
-    </p>
-  </footer>
+  <input id="clickMe" type="button" value="clickme" onclick="animatePie();" />
 </body>
 </html>

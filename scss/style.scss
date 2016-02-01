@@ -1,3 +1,55 @@
-@import 'vars';
 @import 'general';
-@import 'header';
+.wrapper{
+  position:relative;
+  height:600px;
+  width:600px;
+}
+.output-container{
+  position: absolute;
+  left: 50%;
+  z-index: 3;
+  top:50%;
+}
+.output{
+  position: relative;
+  left: -50%;
+  top: -50%
+}
+.background{
+  position:absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+  background: none;
+  border-radius: 50%;
+  z-index:1;
+  circle {
+    fill: none;
+    stroke: red;
+    opacity: 0.4;
+    stroke-width: 2;
+    stroke-dasharray: 100 100;
+  }
+}
+
+
+.filler {
+  position:absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+  background: none;
+  border-radius: 50%;
+  z-index:2;
+  circle {
+    transition: stroke-dasharray .3s ease;
+    fill: none;
+    stroke: red;
+    stroke-width: 2;
+    stroke-dasharray: 32 100;
+  }
+}
